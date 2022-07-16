@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header class="px-4">
+      <div class="md:container lg:max-w-screen-xl mx-auto md:border-b md:relative">
+        <div class="flex items-center h-20 md:h-auto md:items-stretch">
+          <button class="js-nav-btn text-gray-600 md:hidden">
+            <i class="icon-menu"></i>
+          </button>
+          <a href="/" class="mr-auto ml-4 -mt-1.5 md:mr-4 md:py-12" title="Sneaker Company">
+            <svg width="138" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.217 20c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.35-.053c-2.7-.405-3.18-.788-3.18-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.281v-.133c0-2.389-1.35-5.238-7.774-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.223 4.675.21.028.433.054.659.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.797 0-3.784-.593-3.784-1.92v-.134H.002L0 14.926v.317c.008.79.118 1.913 1.057 2.862C2.303 19.362 4.712 20 8.217 20Zm13.21 0v-7.49c0-2.104.547-4.423 4.176-4.423 3.915 0 3.778 2.777 3.768 4.042V20h4.18v-7.768c0-2.264-.176-7.766-6.732-7.766-2.778 0-4.192.911-5.195 2.28h-.197V4.467H17.22V20h4.207Zm21.959 0c5.094 0 7.787-2.07 8.217-5.405H47.53c-.386 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.056-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.099-9.574h-8.188c.486-1.574 1.764-2.431 4.089-2.431 2.994 0 3.755 1.267 4.099 2.431ZM70.499 20V4.457H66.29V6.74h-.176c-1.053-1.377-2.809-2.283-5.677-2.283-6.433 0-7.225 5.293-7.253 7.635v.137c0 2.092.732 7.771 7.241 7.771 2.914 0 4.684-.818 5.734-2.169h.131V20H70.5Zm-8.854-3.623c-3.996 0-4.447-3.032-4.447-4.148 0-1.21.426-4.148 4.455-4.148 3.631 0 4.374 2.044 4.374 4.148 0 2.35-.742 4.148-4.382 4.148ZM88.826 20l-6.529-9.045 6.588-6.488h-5.827l-6.836 6.756V0h-4.187v19.954h4.187V16.94l3.02-2.976L83.6 20h5.226Zm9.9 0c5.094 0 7.786-2.07 8.217-5.405h-4.074c-.387 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.057-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.098-9.574h-8.187c.485-1.574 1.763-2.431 4.089-2.431 2.994 0 3.755 1.267 4.098 2.431ZM112.76 20v-6.97c0-2.103.931-4.542 4.05-4.542 1.33 0 2.393.236 2.785.346l.67-3.976c-.728-.16-1.626-.392-2.757-.392-2.665 0-3.622.794-4.486 2.282h-.262V4.466h-4.21V20h4.21Zm17.221 0c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.349-.053c-2.701-.405-3.181-.788-3.181-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.282v-.133c0-2.389-1.35-5.238-7.775-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.224 4.675.21.028.432.054.658.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.796 0-3.784-.593-3.784-1.92v-.134h-4.319l-.001.301v.317c.008.79.117 1.913 1.056 2.862 1.246 1.257 3.655 1.895 7.16 1.895Z"
+                fill="#1D2026"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+          <div class="js-nav js-nav-btn fixed inset-0 z-50 bg-black bg-opacity-50 hidden"></div>
+          <nav class="js-nav fixed top-0 left-0 w-2/3 h-screen z-50 bg-white px-5 hidden md:static md:block md:w-auto md:h-auto md:mr-auto">
+            <button class="js-nav-btn text-gray-600 h-20 md:hidden">
+              <i class="icon-close"></i>
+            </button>
+            <div class="mt-8 flex flex-col space-y-4 font-bold text-lg md:flex-row md:space-y-0 md:space-x-4 md:mt-0 md:h-full">
+              <a href="#" class="nav-link">Collections</a>
+              <a href="#" class="nav-link">Men</a>
+              <a href="#" class="nav-link">Women</a>
+              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">Contact</a>
+            </div>
+          </nav>
+          <div class="md:flex md:items-center group">
+            <button class="js-basket-btn text-lg relative text-gray-600">
+              <i class="icon-cart"></i>
+              <span class="js-basket-qty absolute -top-2 -right-4 w-6 bg-orange-600 text-white text-xs rounded-full hidden"></span>
+            </button>
+            <div class="js-basket absolute top-24 left-0 z-40 w-full hidden md:block md:w-96 md:right-0 md:left-auto md:opacity-0 md:pointer-events-none md:group-hover:opacity-100 md:group-hover:pointer-events-auto transition">
+              <div class="bg-white rounded-lg shadow-xl mx-2">
+                <div class="px-4 py-6 border-b">
+                  <strong>Cart</strong>
+                </div>
+                <div class="js-basket-empty px-4 h-36 flex justify-center items-center">
+                  <strong class="text-gray-500">Your cart is empty</strong>
+                </div>
+                <template class="js-basket-template">
+                  <div class="js-basket-item flex items-center mb-4">
+                    <img class="w-16 h-auto rounded-lg mr-4" src="%_image_%" alt="%_name_%">
+                    <div class="text-gray-600">
+                      <p>%_name_%</p>
+                      <p>
+                        <span>$%_price_% &times; <span class="js-basket-item-qty">%_qty_%</span></span>
+                        <span class="js-basket-item-total text-black font-bold">$%_total_%</span>
+                      </p>
+                    </div>
+                    <button class="js-basket-remove ml-auto text-gray-500">
+                      <i class="icon-delete"></i>
+                    </button>
+                  </div>
+                </template>
+                <div class="js-basket-content px-4 py-6 flex flex-col hidden">
+                  <button class="w-full h-14 bg-orange-600 text-white font-medium rounded-lg order-1">Checkout</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <button class="ml-6">
+            <img class="h-8 w-8 md:h-12 md:w-12 border-2 rounded-full hover:border-orange-600 transition" src="/images/image-avatar.png" alt="">
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="md:container lg:max-w-screen-xl mx-auto">
+        <div class="lg:flex lg:p-16 lg:items-center">
+          <div class="lg:w-2/5 flex-shrink-0 lg:mr-16">
+            <div class="js-slider swiper w-full relative overflow-hidden">
+              <div class="swiper-wrapper flex w-full">
+                <img class="swiper-slide" src="/images/image-product-1.jpg" alt="Product image 1">
+                <img class="swiper-slide" src="/images/image-product-2.jpg" alt="Product image 2">
+                <img class="swiper-slide" src="/images/image-product-3.jpg" alt="Product image 3">
+                <img class="swiper-slide" src="/images/image-product-4.jpg" alt="Product image 4">
+              </div>
+            </div>
+            <div class="justify-between mt-4 hidden lg:grid lg:grid-cols-4 gap-4">
+              <img class="js-slider-thumb swiper-thumb active" src="/images/image-product-1-thumbnail.jpg" alt="Product image thumbnail 1">
+              <img class="js-slider-thumb swiper-thumb" src="/images/image-product-2-thumbnail.jpg" alt="Product image thumbnail 2">
+              <img class="js-slider-thumb swiper-thumb" src="/images/image-product-3-thumbnail.jpg" alt="Product image thumbnail 3">
+              <img class="js-slider-thumb swiper-thumb" src="/images/image-product-4-thumbnail.jpg" alt="Product image thumbnail 4">
+            </div>
+          </div>
+          <div class="px-4 mt-8 lg:ml-8">
+            <h2 class="text-orange-600 uppercase text-xs font-bold tracking-widest">Sneaker Company</h2>
+            <h1 class="text-3xl font-bold mt-2 md:text-5xl">Fall Limited Edition Sneakers</h1>
+            <p class="text-gray-600 mt-2">
+              These low-profile sneakers are your perfect
+              casual wear companion. Featuring a durable rubber outer sole, they’ll
+              withstand everything the weather can offer.
+            </p>
+            <div class="flex items-center mt-4 md:block">
+              <span class="text-2xl font-extrabold">$125.00</span>
+              <span class="px-2 bg-orange-100 text-orange-700 rounded-md font-bold ml-2">50%</span>
+              <span class="line-through text-gray-400 ml-auto md:block">$250.00</span>
+            </div>
+            <div class="md:flex">
+              <div class="flex items-stretch bg-gray-100 rounded-lg mt-6 md:mr-6">
+                <button class="js-qty-minus p-4 text-orange-600 hover:opacity-50 transition">
+                  <i class="icon-minus"></i>
+                </button>
+                <input type="number" value="1" required class="js-qty w-full bg-transparent text-center font-bold text-lg appearance-none ring-orange-400 focus:outline-none focus:ring-2 invalid:ring-2 invalid:ring-red-400">
+                <button class="js-qty-plus p-4 text-orange-600 hover:opacity-50 transition">
+                  <i class="icon-plus"></i>
+                </button>
+              </div>
+              <button 
+                class="js-add-to-cart flex w-full h-14 mt-6 items-center justify-center bg-orange-500 text-white rounded-lg shadow-md shadow-orange-200 hover:shadow-xl hover:bg-opacity-50 hover:shadow-orange-100 transition"
+                data-name="Fall Limited Edition Sneakers"
+                data-image="/images/image-product-1.jpg"
+                data-price="125.00"
+              >
+                <i class="icon-cart mr-4"></i>
+                <strong>Add to cart</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container mx-auto text-center text-xs text-gray-500 mt-16">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://oktaycolakoglu.com">Oktay Çolakoğlu</a>.
+    </div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+@layer components {
+  .nav-link {
+    @apply md:inline-flex md:h-full md:items-center md:border-b md:border-transparent md:hover:border-orange-600 md:font-normal md:text-gray-500 transition;
+  }
+
+  .swiper-slide {
+    @apply block w-full h-auto lg:rounded-lg;
+  }
+
+  .swiper-thumb {
+    @apply inline-block w-full h-full rounded-lg border-2 border-transparent cursor-pointer active:brightness-110 transition;
+  }
+}
+
+@layer utilities {
+  .active {
+    @apply opacity-50 border-orange-600;
+  }
+}
