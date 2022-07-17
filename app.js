@@ -66,7 +66,6 @@ $(document).on('click', '.js-add-to-cart', ({ currentTarget }) => {
     $('.js-basket-content').append(templateRenderer(template, {
       name: $this.data('name'),
       price: $this.data('price'),
-      image: $this.data('image'),
       total: new Intl.NumberFormat('en-US', {
         minimumFractionDigits: 2,
       }).format(parseFloat($this.data('price')) * parseInt(qty)),
