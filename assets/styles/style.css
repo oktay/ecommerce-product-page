@@ -14,11 +14,11 @@ input::-webkit-outer-spin-button,
   }
 
   .swiper-slide {
-    @apply block w-full h-auto lg:rounded-lg;
+    @apply block w-full h-full lg:rounded-lg aspect-square;
   }
 
   .swiper-thumb {
-    @apply inline-block w-full h-full rounded-lg border-2 border-transparent cursor-pointer active:brightness-110 transition;
+    @apply inline-block aspect-square w-full h-full rounded-lg border-2 border-transparent cursor-pointer active:brightness-110 transition;
   }
 }
 

@@ -7,6 +7,6 @@ import "@fontsource/kumbh-sans/600.css"
 import "@fontsource/kumbh-sans/700.css"
 import "@fontsource/kumbh-sans/800.css"
 import "@fontsource/kumbh-sans/900.css"
-import './style.css'
-import './icomoon/style.css'
+import '../styles/style.css'
+import '../styles/icomoon/style.css'
 import './app'
